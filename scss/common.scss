@@ -1,0 +1,40 @@
+@import "responsivefunc";
+
+body {
+  background-color: #f7f7f7;
+}
+
+@include respond-above(xs) {
+  .mobile_view {
+    display: none !important;
+  }
+}
+
+@include respond-below(xs) {
+  .desktop_view {
+    display: none !important;
+  }
+}
+
+@include respond-below(sm) {
+  .tablet_view {
+    display: none !important;
+  }
+}
+
+.main_container {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.main_layout {
+  margin: 0 auto;
+  max-width: 993px;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.no_padding_margin {
+  padding: 0px !important;
+  margin: 0px !important;
+}
